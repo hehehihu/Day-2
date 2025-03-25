@@ -1,0 +1,48 @@
+.tip-calculator-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #c5e4e7;
+    min-height: 100vh;
+    padding: 2rem;
+
+    .header {
+        margin-bottom: 1.5rem;
+    
+        .logo {
+          width: 100px;  // Tuỳ chỉnh kích thước logo
+          display: block;
+          margin: 0 auto;
+        }
+      }
+  
+    .calculator {
+      background-color: #fff;
+      width: 60%;
+      max-width: 900px;
+      margin-top: 2rem;
+      border-radius: 1rem;
+      padding: 2rem;
+      display: flex;
+      gap: 1rem;
+
+      @media screen and (max-width: 600px) {
+        /* Chuyển sang layout dọc */
+        flex-direction: column;
+        width: 90%;
+        gap: 2rem; /* Tăng khoảng cách nếu muốn */
+      }
+    }
+  }
+  
+  // Ẩn h1 (dùng để hỗ trợ screen reader)
+//   .sr-only {
+//     position: absolute;
+//     width: 1px;
+//     height: 1px;
+//     margin: -1px;
+//     padding: 0;
+//     border: 0;
+//     clip: rect(0,0,0,0);
+//     overflow: hidden;
+//   }

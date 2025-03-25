@@ -1,0 +1,45 @@
+.tip-result {
+    flex: 1;
+    background-color: #00494d;
+    border-radius: 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .result-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #fff;
+        margin-bottom: 1rem;
+
+        .result-label {
+            p {
+                font-size: 1rem;
+            }
+
+            span {
+                font-size: 0.8rem;
+                color: #7f9c9f;
+            }
+        }
+
+        .result-value {
+            font-size: 2rem;
+            color: #26c0ab;
+        }
+    }
+
+    .reset-btn {
+        width: 100%;
+        padding: 1rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+        background-color: #26c0ab;
+        color: #00494d;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+
+/* Biến màu sắc (tham khảo style guide của Frontend Mentor) */
+$primary: #26c2ae;
+$very-dark-cyan: #00474b;
+$dark-grayish-cyan: #5e7a7d;
+$grayish-cyan: #7f9c9f;
+$light-grayish-cyan: #c5e4e7;
+$white: #ffffff;
+
+/* Đặt font, reset cơ bản */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $light-grayish-cyan;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  height: 100%;
+}
+
+/* App layout */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
