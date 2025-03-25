@@ -31,6 +31,9 @@ const TipInputForm: React.FC<TipInputFormProps> = ({
     setCustomTip(0);
   };
 
+  const billError = bill <= 0;
+  const peopleError = people <= 0;
+
   return (
     <div className="tip-input-form">
       <label htmlFor="bill-input" className="label">
@@ -50,6 +53,10 @@ const TipInputForm: React.FC<TipInputFormProps> = ({
           }}
         />
       </div>
+
+      {billError && (
+        <p className="error-msg">Bill must be greater than 0</p>
+      )}
 
       <p className="label">Select Tip %</p>
       <div className="tip-buttons">
@@ -93,6 +100,10 @@ const TipInputForm: React.FC<TipInputFormProps> = ({
           }}
         />
       </div>
+
+      {peopleError && (
+        <p className="error-msg">Number of People must be at least 1</p>
+      )}
     </div>
   );
 };

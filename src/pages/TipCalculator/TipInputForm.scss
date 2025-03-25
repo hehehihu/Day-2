@@ -48,6 +48,8 @@
       cursor: pointer;
       padding: 0.5rem;
       text-align: center;
+      width: 100%;
+      box-sizing: border-box;
     }
 
     button {
@@ -72,4 +74,10 @@
       }
     }
   }
+}
+
+.error-msg {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 0.2rem;
 }
